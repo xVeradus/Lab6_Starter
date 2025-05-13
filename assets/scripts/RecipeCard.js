@@ -124,6 +124,26 @@ class RecipeCard extends HTMLElement {
 		// A6. TODO - Select the <article> we added to the Shadow DOM in the constructor
 		const articletwo = this.article;
 		// A7. TODO - Set the contents of the <article> with the <article> template given in
+		let star = "";
+		if (data.rating == 0) {
+			star = "<img src='/assets/images/icons/0-star.svg' alt='0 stars'>";
+		}
+		if (data.rating == 1) {
+			star = "<img src='/assets/images/icons/1-star.svg' alt='1 stars'>";
+		}
+		if (data.rating == 2) {
+			star = "<img src='/assets/images/icons/2-star.svg' alt='2 stars'>";
+		}
+		if (data.rating == 3) {
+			star = "<img src='/assets/images/icons/3-star.svg' alt='3 stars'>";
+		}
+		if (data.rating == 4) {
+			star = "<img src='/assets/images/icons/4-star.svg' alt='4 stars'>";
+		}
+		if (data.rating == 5) {
+			star = "<img src='/assets/images/icons/5-star.svg' alt='5 stars'>";
+		}
+
 		articletwo.innerHTML = ` 
 			<img src=${data.imgSrc} alt=${data.imgAlt}>
 			<p class="title">
@@ -132,7 +152,7 @@ class RecipeCard extends HTMLElement {
 			<p class="organization">${data.organization}</p>
 			<div class="rating">
 				<span>${data.rating}</span>
-				<img src="/assets/images/icons/5-star.svg" alt="5 stars">
+				${star}
 				<span>(${data.numRatings})</span>
 			</div>
 			<time>${data.lengthTime}</time>
