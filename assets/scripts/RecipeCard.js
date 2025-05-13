@@ -126,22 +126,22 @@ class RecipeCard extends HTMLElement {
 		// A7. TODO - Set the contents of the <article> with the <article> template given in
 		let star = "";
 		if (data.rating == 0) {
-			star = "<img src='/assets/images/icons/0-star.svg' alt='0 stars'>";
+			star = "<img src='assets/images/icons/0-star.svg' alt='0 stars'>";
 		}
 		if (data.rating == 1) {
-			star = "<img src='/assets/images/icons/1-star.svg' alt='1 stars'>";
+			star = "<img src='assets/images/icons/1-star.svg' alt='1 stars'>";
 		}
 		if (data.rating == 2) {
-			star = "<img src='/assets/images/icons/2-star.svg' alt='2 stars'>";
+			star = "<img src='assets/images/icons/2-star.svg' alt='2 stars'>";
 		}
 		if (data.rating == 3) {
-			star = "<img src='/assets/images/icons/3-star.svg' alt='3 stars'>";
+			star = "<img src='assets/images/icons/3-star.svg' alt='3 stars'>";
 		}
 		if (data.rating == 4) {
-			star = "<img src='/assets/images/icons/4-star.svg' alt='4 stars'>";
+			star = "<img src='assets/images/icons/4-star.svg' alt='4 stars'>";
 		}
 		if (data.rating == 5) {
-			star = "<img src='/assets/images/icons/5-star.svg' alt='5 stars'>";
+			star = "<img src='assets/images/icons/5-star.svg' alt='5 stars'>";
 		}
 
 		articletwo.innerHTML = ` 
